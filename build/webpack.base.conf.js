@@ -26,13 +26,6 @@ const webpackConfig = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        enforce: 'pre',
-        use: {
-          loader: 'tslint-loader'
-        }
-      },
-      {
-        test: /\.(ts|tsx)$/,
         use: {
           loader: 'awesome-typescript-loader',
           options: {
@@ -50,6 +43,7 @@ const webpackConfig = {
             name: utils.assetsPath('img/[name].[hash:7].[ext]')
           }
         }
+
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
