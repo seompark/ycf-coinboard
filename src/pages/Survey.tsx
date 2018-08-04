@@ -132,7 +132,7 @@ export class Survey extends React.Component<{}, {
       })
     }
 
-
+    window.location.href = '/'
   }
   public validateForm () {
     return (this.state.content && this.state.name && this.state.age && this.state.phone)
