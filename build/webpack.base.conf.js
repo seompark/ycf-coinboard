@@ -10,7 +10,8 @@ function resolve (dir = '') {
 const webpackConfig = {
   context: resolve(),
   entry: {
-    app: './src/index.tsx'
+    app: './src/index.tsx',
+    polyfill: 'babel-polyfill'
   },
   output: {
     path: config.build.assetsRoot,
