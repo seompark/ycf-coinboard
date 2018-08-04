@@ -108,6 +108,7 @@ export class Survey extends React.Component<{}, {
     })
 
     const { data } = await axios.request({
+      url: '/posts',
       baseURL: 'http://45.76.196.33:8081',
       method: 'post',
       data: {
